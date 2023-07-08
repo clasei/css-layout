@@ -1,13 +1,26 @@
 body {
-  background-color: #55595c
+  background-color: #55595c;
+  margin: 0; /* resets the default 8px from most browsers */
+  text-align: center; /* centers all text elements in the website */
 }
 
 #main-header {
   background-color: white;
   color: #a70184;
+  padding: 5px 0; /* top&down left&right */
+  margin: 20px 5% 20px 5%; /* top right down left */
 }
 
 .games-container img  {
   height: 180px;
   width: 120px;
 }
+
+#brands li {
+  background-color: white;
+  padding: 10px;
+  border: 2px solid black; 
+  list-style-position: inside; /* moves the bullet point inside the element */
+  margin-right: 40px; /* same as native left separation for bullet point */
+}
+
