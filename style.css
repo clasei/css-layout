@@ -8,15 +8,10 @@ body {
   background-color: white;
   color: #a70184;
   padding: 5px 0; /* top&down left&right */
-  margin: 20px 5% 20px 5%; /* top right down left */
+  margin: 20px 30px 20px 30px; /* top right down left */
 }
 
-.games-container img  {
-  height: 180px;
-  width: 120px;
-}
-
-#brands li {
+#brands-section li {
   background-color: white;
   padding: 10px;
   border: 2px solid black; 
@@ -24,3 +19,6 @@ body {
   margin-right: 40px; /* same as native left separation for bullet point */
 }
 
+#games-section, #used-section, #brands-section, #access-buttons {
+  background-color: lightgray;
+}
