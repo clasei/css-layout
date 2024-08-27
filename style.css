@@ -208,7 +208,7 @@ body {
 
   #access-buttons {
     justify-content: center;
-    gap: 5px;
+    gap: 25px;
   }
 }
 
@@ -220,6 +220,10 @@ body {
 
   #access-buttons {
     justify-content: center;
-    gap: 10px;
+    gap: 75px;
+  }
+
+  #responsive-container {
+    display: flex;
   }
 }
