@@ -196,3 +196,30 @@ body {
   position: sticky;
   top: 0; /* it works as fixed when the scroll goes to its position */
 }
+
+
+/* MEDIA QUERIES  */
+
+@media (width > 680px) {
+
+  body {
+    background-color: darkred;
+  }
+
+  #access-buttons {
+    justify-content: center;
+    gap: 5px;
+  }
+}
+
+@media (width > 1030px) {
+
+  body {
+    background-color: blue;
+  }
+
+  #access-buttons {
+    justify-content: center;
+    gap: 10px;
+  }
+}
