@@ -1,3 +1,7 @@
+html {
+  font-size: 20px; /* 16px === default size */
+}
+
 body {
   background-color: #55595c;
   margin: 0; /* resets the default 8px from most browsers */
@@ -7,7 +11,7 @@ body {
 #main-header {
   background-color: white;
   padding: 5px 0; /* top&down left&right */
-  margin: 20px 30px 20px 30px; /* top right down left */
+  margin: 20px 5% 20px 5%; /* top right down left */
 }
 
 #brands-section li {
@@ -197,6 +201,35 @@ body {
   top: 0; /* it works as fixed when the scroll goes to its position */
 }
 
+/* UNITS UNITS UNITS UNITS UNITS UNITS UNITS UNITS UNITS UNITS UNITS UNITS UNITS UNITS */
+
+/* 
+rem = relative to root element / default size
+em = relative to the size of the element font size
+% = percentage of the parentproperty ::-ms-value
+vh = percentage of the scren height 
+vw = percentage of the scren width  
+*/
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h4 {
+  font-size: 1.8rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+button span {
+  font-size: 0.7rem;
+}
 
 /* MEDIA QUERIES  */
 
@@ -209,6 +242,10 @@ body {
   #access-buttons {
     justify-content: center;
     gap: 25px;
+  }
+
+  html {
+    font-size: 16px;
   }
 }
 
@@ -225,5 +262,9 @@ body {
 
   #responsive-container {
     display: flex;
+  }
+
+  html {
+    font-size: 20px;
   }
 }
