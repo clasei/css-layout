@@ -113,7 +113,7 @@ body {
 /* FLEX FLEX FLEX FLEX FLEX FLEX FLEX FLEX FLEX  */
 /* FLEX IS ALWAYS APPLIED TO THE CONTAINER */
 #access-buttons {
-  height: 120px;
+  height: 100px;
 
   display: flex;
   flex-direction: row; /* default value */
@@ -172,7 +172,7 @@ body {
   top: -10px;
 }
 
-/* consider this absolute + relative position together */
+/* consider this absolute + relative position together BELOW */
 
 #confetti {
   position: absolute; /* forces a position relative to the whole screen */
@@ -185,4 +185,13 @@ body {
   position: relative; /* this allows to organize items inside the container relative to it */
 }
 
-/* */
+/* consider this absolute + relative position together ABOVE */
+
+#access-buttons {
+  /* position: fixed;
+  width: 400px;
+  top: 0; */
+  /* STICKY STICKY STICKY STICKY STICKY STICKY STICKY STICKY STICKY STICKY STICKY STICKY */
+  position: sticky;
+  top: 0; /* it works as fixed when the scroll goes to its position */
+}
