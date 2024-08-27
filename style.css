@@ -6,7 +6,6 @@ body {
 
 #main-header {
   background-color: white;
-  color: #a70184;
   padding: 5px 0; /* top&down left&right */
   margin: 20px 30px 20px 30px; /* top right down left */
 }
@@ -22,3 +21,168 @@ body {
 #games-section, #used-section, #brands-section, #access-buttons {
   background-color: lightgray;
 }
+
+.card img {
+  width: 120px;
+  height: 180px;
+  transition: 1s;
+}
+
+#main-header h1 span {
+  color: #a70184;
+}
+
+/* > forces css o apply the style ONLY to the direct descendant - excluding h1 here */
+#main-header > span {
+  text-decoration: underline;
+}
+
+#access-buttons button {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+}
+
+/* PSEUDO-CLASSES */
+#access-buttons button:hover {
+  background-color: #a70184;
+  color: yellow;
+}
+
+#access-buttons button:active {
+  background-color: black;
+  color: #a70184;
+}
+
+.card img:hover {
+  width: 140px;
+  height: 200px;
+}
+
+#brands-section ul li {
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+
+/* #brands-section ul li:first-child {
+  background-color: #fa91e3;
+}
+
+#brands-section ul li:last-child {
+  background-color: #fa91e3;
+}
+
+#brands-section ul li:nth-child(3, 2) {
+  background-color: #fa91e3;
+} */
+
+/* even / odd */
+#brands-section ul li:nth-child(odd) {
+  background-color: #fa91e3;
+}
+
+/* PSEUDO-ELEMENTS */
+#brands-section ul li::marker {
+  color: #a70184;
+  font-size: larger;
+  content: '👾 ';
+}
+
+#brands-section ul li::first-letter {
+  color: #a70184;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 20px;
+}
+
+/* #brands-section ul li::after {
+  content: ' !! sale';
+} */
+
+/* how to use pseudo-classes + pseudo-elements */
+#brands-section ul li:hover::after {
+  content: ' ON SALE';
+  font-family: sans-serif;
+  font-weight: 600;
+  color: blue;
+}
+
+#brands-section ul li.fifty:hover::after {
+  content: ' 50%';
+}
+
+/* FLEX FLEX FLEX FLEX FLEX FLEX FLEX FLEX FLEX  */
+/* FLEX IS ALWAYS APPLIED TO THE CONTAINER */
+#access-buttons {
+  height: 120px;
+
+  display: flex;
+  flex-direction: row; /* default value */
+  justify-content: space-evenly; /* main axis */
+  align-items: center; /* secondary axis = cross axis */
+  /* gap: 25px; here it addes separation */
+}
+
+.card {
+  background-color: #55595c;
+  width: 200px;
+  height: 380px;
+  border-radius: 10px;
+  color: white;
+}
+
+.games-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  gap: 15px;
+  padding-bottom: 15px;
+  margin: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  /* justify content aligns verticaly cause flex-direction: column */
+  /* column changes main axis to y */
+  /* justify-content: center; */
+  align-items: center;
+  justify-content: space-evenly;
+
+  /* FLEX GROW FLEX GROW FLEX GROW FLEX GROW FLEX GROW FLEX GROW FLEX GROW  */
+  /* flex-grow: 1; */
+
+  /* BONUS BONUS BONUS BONUS BONUS BONUS BONUS BONUS BONUS BONUS BONUS BONUS  */
+  /* TRANSITION TRANSITION TRANSITION TRANSITION TRANSITION TRANSITION TRANSITION   */
+  /* transition: flex-grow 0.5s; */
+  transition: 2s;
+}
+
+.card:hover {
+  /* the flex-grow number specifies the proportion in relation to other items  */
+  flex-grow: 1;
+  background-color: #a70184;
+}
+
+#access-buttons button.bottom {
+  position: relative; /* it allows to access to top, right, bottom, left */
+  /* position: relative; change the position even outside the container */
+  /* it affects the item without changing the container, like margin or padding */
+  top: -10px;
+}
+
+/* consider this absolute + relative position together */
+
+#confetti {
+  position: absolute; /* forces a position relative to the whole screen */
+  top: 5px;
+  right: 5px;
+  margin: 0;
+}
+
+#main-header {
+  position: relative; /* this allows to organize items inside the container relative to it */
+}
+
+/* */
